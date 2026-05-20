@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: mysql
   namespace: mysql
+  labels:
+    release: prometheus-stack
 spec:
   selector:
     app: mysql
